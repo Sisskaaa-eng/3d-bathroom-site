@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Bathroom Visualisations</title>
+  <style>
+    * { scroll-behavior: smooth; }
+    body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; color: #333; }
+    header { background: #0d6efd; color: white; text-align: center; padding: 1.5rem 1rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+    header h1 { margin: 0; font-size: 2rem; }
+    header p { margin: 0.3rem 0 0; font-size: 1rem; }
+    nav { margin-top: 0.5rem; }
+    nav a { color: white; text-decoration: none; margin: 0 0.8rem; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 3rem 1rem; max-width: 900px; margin: auto; }
+    h2 { text-align: center; margin-bottom: 2rem; font-size: 1.8rem; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .gallery img { width: 100%; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .gallery img:hover { transform: scale(1.03); }
+    form { display: flex; flex-direction: column; gap: 1rem; }
+    input, textarea { padding: 0.8rem; border: 1px solid #ccc; border-radius: 8px; font-size: 1rem; width: 100%; }
+    button { padding: 0.8rem; background: #0d6efd; color: white; border: none; border-radius: 8px; font-size: 1rem; cursor: pointer; transition: background 0.3s; }
+    button:hover { background: #0b5ed7; }
+    footer { text-align: center; padding: 2rem 1rem; background: #f1f1f1; font-size: 0.9rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>3D Bathroom Visualisations</h1>
+    <p>Bring your dream bathroom project to life with stunning 3D designs</p>
+    <nav>
+      <a href="#bathroom">Bathroom</a>
+      <a href="#store">Store</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="bathroom">
+    <h2>Bathroom Visualisations</h2>
+    <div class="gallery">
+      <img src="render1.jpg" alt="Bathroom render 1">
+      <img src="render2.jpg" alt="Bathroom render 2">
+      <img src="render3.png" alt="Bathroom render 3">
+      <img src="render4.png" alt="Bathroom render 4">
+      <img src="real1.HEIC" alt="Bathroom real photo 1">
+      <img src="real2.HEIC" alt="Bathroom real photo 2">
+      <img src="real3.HEIC" alt="Bathroom real photo 3">
+      <img src="render5.png" alt="Bathroom render 5">
+      <img src="render6.png" alt="Bathroom render 6">
+
+    </div>
+    <h3>Downloads</h3>
+    <ul>
+      <li><a href="bathroom-brochure.pdf" target="_blank">Bathroom Section</a></li>
+      <li><a href="bathroom-plan.pdf" target="_blank">Bathroom Floor Plan</a></li>
+    </ul>
+  </section>
+
+  <section id="store">
+    <h2>Store Files</h2>
+    <div class="gallery">
+      <img src="store1.jpg" alt="Store render 1">
+      <img src="store2.jpg" alt="Store render 2">
+      <img src="store3.jpg" alt="Store render 3">
+      <img src="store4.jpg" alt="Store render 4">
+      <img src="store5.jpg" alt="Store render 5">
+
+    </div>
+    <h3>Downloads</h3>
+    <ul>
+      <li><a href="store Section A-A.pdf" target="_blank">Store Section</a></li>
+      <li><a href="store Furniture layout 0.07A.pdf" target="_blank">Store Plan</a></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 3D Bathroom Visualisations | Designed with ❤️</p>
+  </footer>
+</body>
+</html>
